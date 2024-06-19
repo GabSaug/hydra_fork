@@ -100,8 +100,7 @@ install:	strip
 	-desktop-file-install --dir $(DESTDIR)$(PREFIX)$(APPDIR) xhydra.desktop
 
 clean:
-	rm -rf xhydra pw-inspector hydra *.o core *.core *.stackdump *~ Makefile.in Makefile dev_rfc hydra.restore arm/*.ipk arm/ipkg/usr/bin/* hydra-gtk/src/*.o hydra-gtk/src/xhydra hydra-gtk/stamp-h hydra-gtk/config.status hydra-gtk/errors hydra-gtk/config.log hydra-gtk/src/.deps hydra-gtk/src/Makefile hydra-gtk/Makefile
-	cp -f Makefile.orig Makefile
+	rm -rf xhydra pw-inspector hydra *.o core *.core *.stackdump *~  dev_rfc hydra.restore arm/*.ipk arm/ipkg/usr/bin/* hydra-gtk/src/*.o hydra-gtk/src/xhydra hydra-gtk/stamp-h hydra-gtk/config.status hydra-gtk/errors hydra-gtk/config.log hydra-gtk/src/.deps
 
 uninstall:
 	-rm -f $(DESTDIR)$(PREFIX)$(BINDIR)/xhydra $(DESTDIR)$(PREFIX)$(BINDIR)/hydra $(DESTDIR)$(PREFIX)$(BINDIR)/pw-inspector $(DESTDIR)$(PREFIX)$(BINDIR)/hydra-wizard.sh $(DESTDIR)$(PREFIX)$(BINDIR)/dpl4hydra.sh
